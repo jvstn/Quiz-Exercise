@@ -6,11 +6,13 @@ public abstract class Question {
 	private String text;
 	private ArrayList<String> choices;
 
+
 	public Question(String text, ArrayList<String> choices) {
 		this.text = text;
 		this.choices = choices;
 	}
 
+	// Overloaded constructor for short answer
 	public Question(String text) {
 	this.text = text;
 	}
@@ -19,13 +21,6 @@ public abstract class Question {
 		System.out.println(text);
 	}
 
-	public String getText() {
-		return text;
-	}
-
-	public void setText(String text) {
-		this.text = text;
-	}
 
 	public void displayAnswers() {
 		for (int i=0; i<choices.size(); i++) {
@@ -37,9 +32,6 @@ public abstract class Question {
 		return choices;
 	}
 
-	public void setChoices(ArrayList<String> choices) {
-		this.choices = choices;
-	}
 
 	public abstract int getAnswers();
 }
