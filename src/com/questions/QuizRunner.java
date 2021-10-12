@@ -3,7 +3,7 @@ package com.questions;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Main {
+public class QuizRunner {
 
     public static void main(String[] args) {
         Quiz cryptoQuiz = new Quiz(new ArrayList<Question>());
